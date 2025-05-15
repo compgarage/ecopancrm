@@ -243,9 +243,20 @@ app_license = "mit"
 # }
 
 fixtures = [
-    {"dt": "Client Script", "filters": [["module", "=", "EcopanCRM"]]},
     {"dt": "Custom Field", "filters": [["module", "=", "EcopanCRM"]]},
     {"dt": "Property Setter", "filters": [["module", "=", "EcopanCRM"]]},
-    # Rimuovi o correggi questo: Custom DocPerm non ha la colonna "module"
-    {"dt": "Custom DocPerm"}  # <-- senza filtri
+    {"dt": "Client Script", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Server Script", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Workspace", "filters": [["module", "=", "EcopanCRM"]]},
+#    {"dt": "Role", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Custom DocPerm", "filters": [["parent", "like", "EcopanCRM%"]]},
+    {"dt": "Report", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Dashboard", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "DocType", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Module Def", "filters": [["name", "=", "EcopanCRM"]]},
+    {"dt": "Notification", "filters": [["module", "=", "EcopanCRM"]]},
+#    {"dt": "Email Template", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Print Format", "filters": [["module", "=", "EcopanCRM"]]},
+#    {"dt": "Letter Head", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Translation"},
 ]
