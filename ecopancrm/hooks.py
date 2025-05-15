@@ -242,3 +242,10 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt": "Client Script", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Custom Field", "filters": [["module", "=", "EcopanCRM"]]},
+    {"dt": "Property Setter", "filters": [["module", "=", "EcopanCRM"]]},
+    # Rimuovi o correggi questo: Custom DocPerm non ha la colonna "module"
+    {"dt": "Custom DocPerm"}  # <-- senza filtri
+]
